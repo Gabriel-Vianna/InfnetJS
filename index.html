@@ -8,5 +8,25 @@
 <body>
     <h1>This is a heading</h1>
     <p>This is a paragraph</p>
+
+    <label>
+        <input id="campo">
+
+        <input id="resultado">
+
+    </label>
+
+    <button id="botao">Clique em mim</button>
+
+    <script>
+
+        document.getElementById('botao').addEventListener('click', () => {
+            let valor_do_campo = document.getElementById('campo').value
+            let s = `Olá ${valor_do_campo}`
+
+            document.getElementById('resultado').value = s
+        }) 
+
+    </script>
 </body>
 </html>
